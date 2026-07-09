@@ -1,0 +1,26 @@
+/* App-specific styles - minimal, theme-agnostic */
+
+/* Ensure proper safe area handling */
+.safe-area-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Smooth page transitions for all themed elements */
+.theme-transition {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Prevent text selection on UI elements */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Touch action optimization */
+.touch-manipulation {
+  touch-action: manipulation;
+}
